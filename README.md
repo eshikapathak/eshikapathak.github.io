@@ -1,4 +1,4 @@
 # eshikapathak.github.io
 Personal Website
 
-[eshikapathak.github.io]
+[Website](eshikapathak.github.io)
