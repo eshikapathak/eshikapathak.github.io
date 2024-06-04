@@ -7,166 +7,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <style>
-      .navbar {
-        overflow: hidden;
-        background-color: #333;
-        position: fixed;
-        top: 0;
-        width: 100%;
-      }
-
-      .navbar a {
-        float: left;
-        display: block;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-      }
-
-      .navbar a:hover {
-        background-color: #ddd;
-        color: black;
-      }
-
-      .content {
-        padding-top: 60px; /* Add top padding to avoid content overlay */
-      }
-    </style>
   </head>
 
   <body>
-    <div class="navbar">
-      <a href="#home">Home</a>
-      <a href="#research">Research</a>
-      <a href="#teaching">Teaching</a>
-    </div>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+      <tbody>
+        <tr style="padding:0px">
+          <td style="padding:0px">
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              <tbody>
+                <tr style="padding:0px">
+                  <td style="padding:2.5%;width:63%;vertical-align:middle">
+                    <p class="name">Eshika Pathak</p>
+                    <p>
+                      Hi, I'm an Electrical and Computer Engineering graduate student specializing in Machine Learning at Carnegie Mellon University.
+                    </p>
+                    <p>
+                      My journey in engineering began at the Indian Institute of Technology (IIT) in Gandhinagar, India. Since then, my academic pursuits have been deeply intertwined with hands-on research in various domains, including autonomous systems, optimization, and reinforcement learning.
+                    </p>
+                    <p>
+                      I believe that everything is learnable through practice and time, and nothing is inherent. I hope to build similarly inclined intelligent systems one day. Nothing (apart from dogs) brings me more joy than learning and tinkering with new knowledge!
+                    </p>
+                    <p><b>This page is still under construction!</b></p>
+                    <p>
+                      <a href="mailto:epathak@andrew.cmu.edu">Email</a> &nbsp;/&nbsp;
+                      <a href="data/epathak-resume.pdf">CV</a> &nbsp;/&nbsp;
+                      <a href="https://www.linkedin.com/in/eshikapathak">LinkedIn</a>
+                    </p>
+                  </td>
+                  <td style="padding:2.5%;width:40%;max-width:40%">
+                    <a href="images/profile.jpg">
+                      <img style="width:150px; height:150px; object-fit: cover; border-radius: 15%;" alt="profile photo" src="images/profile.jpg" class="hoverZoomLink">
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
 
-    <div class="content">
-      <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-        <tbody>
-          <tr style="padding:0px">
-            <td style="padding:0px">
-              <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                <tbody>
-                  <tr style="padding:0px">
-                    <td style="padding:2.5%;width:63%;vertical-align:middle">
-                      <p class="name">Eshika Pathak</p>
-                      <p>
-                        Hi, I'm an Electrical and Computer Engineering graduate student specializing in Machine Learning at Carnegie Mellon University.
-                      </p>
-                      <p>
-                        My journey in engineering began at the Indian Institute of Technology (IIT) in Gandhinagar, India. Since then, my academic pursuits have been deeply intertwined with hands-on research in various domains, including autonomous systems, optimization, and reinforcement learning.
-                      </p>
-                      <p>
-                        I believe that everything is learnable through practice and time, and nothing is inherent. I hope to build similarly inclined intelligent systems one day. Nothing (apart from dogs) brings me more joy than learning and tinkering with new knowledge!
-                      </p>
-                      <p><b>This page is still under construction!</b></p>
-                      <p>
-                        <a href="mailto:epathak@andrew.cmu.edu">Email</a> &nbsp;/&nbsp;
-                        <a href="data/epathak-resume.pdf">CV</a> &nbsp;/&nbsp;
-                        <a href="https://www.linkedin.com/in/eshikapathak">LinkedIn</a>
-                      </p>
-                    </td>
-                    <td style="padding:2.5%;width:40%;max-width:40%">
-                      <a href="images/profile.jpg">
-                        <img style="width:150px; height:150px; object-fit: cover; border-radius: 15%;" alt="profile photo" src="images/profile.jpg" class="hoverZoomLink">
-                      </a>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              <tbody>
+                <tr>
+                  <td style="padding:20px;width:100%;vertical-align:middle">
+                    <h2>Research</h2>
+                  </td>
+                </tr>
 
-              <table id="research" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                <tbody>
-                  <tr>
-                    <td style="padding:20px;width:100%;vertical-align:middle">
-                      <h2>Research</h2>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="padding:20px;width:100%;vertical-align:middle">
-                      <a href="project1_link"><span class="papertitle">Autonomous Vehicle Safe Control in the Presence of Self-Seeking Humans</span></a><br>
-                      Advisor: Prof. Yorie Nakahira, Control and Learning Group, Carnegie Mellon University (August 2023 - Present)<br>
-                      Designing and experimentally validating optimal autonomous vehicle policies by accounting for humans’ self-seeking behaviors and ensuring better safety and performance trade-offs compared to deterministic worst-case safe control techniques and equilibrium-based stochastic methods.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="padding:20px;width:100%;vertical-align:middle">
-                      <a href="project2_link"><span class="papertitle">Automating Microbial Growth Detection and Monitoring Using TDLAS</span></a><br>
-                      Advisor: Prof. Arup Lal Chakraborty, Photonic Sensors Lab, IIT Gandhinagar (August 2022 - April 2023)<br>
-                      Proposed and conducted experiments to detect the growth of E.coli using a quantum cascade laser and tunable diode laser absorption spectroscopy (TDLAS). Devised an intelligent baseline-selection algorithm, eliminating manual data processing.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="padding:20px;width:100%;vertical-align:middle">
-                      <a href="project3_link"><span class="papertitle">Wearable Foot Plantar Pressure Monitoring and Analysis System</span></a><br>
-                      Advisor: Prof. Uttama Lahiri, IRACS Lab, IIT Gandhinagar (January 2021 - May 2021)<br>
-                      Engineered an end-to-end system to collect data and process gait characteristics from piezoelectric force-sensing resistive sensors placed in shoe insoles. Optimized the system to reduce latency from over a minute to a few seconds.
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+                <tr>
+                  <td style="padding:20px;width:100%;vertical-align:middle">
+                    <a href="project1_link"><span class="papertitle">Autonomous Vehicle Safe Control in the Presence of Self-Seeking Humans</span></a><br>
+                    Advisor: Prof. Yorie Nakahira, Control and Learning Group, Carnegie Mellon University (August 2023 - Present)<br>
+                    Designing and experimentally validating optimal autonomous vehicle policies by accounting for humans’ self-seeking behaviors and ensuring better safety and performance trade-offs compared to deterministic worst-case safe control techniques and equilibrium-based stochastic methods.
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:20px;width:100%;vertical-align:middle">
+                    <a href="project2_link"><span class="papertitle">Automating Microbial Growth Detection and Monitoring Using TDLAS</span></a><br>
+                    Advisor: Prof. Arup Lal Chakraborty, Photonic Sensors Lab, IIT Gandhinagar (August 2022 - April 2023)<br>
+                    Proposed and conducted experiments to detect the growth of E.coli using a quantum cascade laser and tunable diode laser absorption spectroscopy (TDLAS). Devised an intelligent baseline-selection algorithm, eliminating manual data processing.
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:20px;width:100%;vertical-align:middle">
+                    <a href="project3_link"><span class="papertitle">Wearable Foot Plantar Pressure Monitoring and Analysis System</span></a><br>
+                    Advisor: Prof. Uttama Lahiri, IRACS Lab, IIT Gandhinagar (January 2021 - May 2021)<br>
+                    Engineered an end-to-end system to collect data and process gait characteristics from piezoelectric force-sensing resistive sensors placed in shoe insoles. Optimized the system to reduce latency from over a minute to a few seconds.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
 
-              <table id="teaching" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                <tbody>
-                  <tr>
-                    <td style="padding:20px;width:100%;vertical-align:middle">
-                      <h2>Teaching</h2>
-                      <p>
-                        <a href="teaching1_link"><span class="papertitle">TA for Principles and Engineering Applications of AI</span></a><br>
-                        Carnegie Mellon University (Spring 2024)<br>
-                        Assisted in delivering lectures, preparing course materials, homeworks, and guiding students through complex machine learning concepts and projects.
-                        <ul>
-                          <li>Item 1</li>
-                          <li>Item 2</li>
-                          <li>Item 3</li>
-                        </ul>
-                      </p>
-                      <p>
-                        <a href="teaching2_link"><span class="papertitle">TA for Engineering Entrepreneurship</span></a><br>
-                        IIT Gandhinagar (Fall 2022)<br>
-                        Facilitated lab sessions, graded assignments, and supported students in understanding applications and projects.
-                      </p>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              <tbody>
+                <tr>
+                  <td style="padding:20px;width:100%;vertical-align:middle">
+                    <h2>Teaching</h2>
+                    <p>
+                      <a href="teaching1_link"><span class="papertitle">TA for Principles and Engineering Applications of AI</span></a><br>
+                      Carnegie Mellon University (Spring 2024)<br>
+                      Assisted in delivering lectures, preparing course materials, homeworks, and guiding students through complex machine learning concepts and projects.
+                      <ul>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                      </ul>
+                    </p>
+                    <p>
+                      <a href="teaching2_link"><span class="papertitle">TA for Engineering Entrepreneurship</span></a><br>
+                      IIT Gandhinagar (Fall 2022)<br>
+                      Facilitated lab sessions, graded assignments, and supported students in understanding applications and projects.
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
 
-              <!--<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                <tbody>
-                  <tr>
-                    <td style="padding:20px;width:100%;vertical-align:middle">
-                      <h2>Blogs / Miscellaneous</h2>
-                      <p>
-                        <a href="blog1_link"><span class="papertitle">The Future of AI in Autonomous Systems</span></a><br>
-                        A comprehensive blog post exploring the advancements and challenges in integrating AI with autonomous systems.
-                      </p>
-                      <p>
-                        <a href="blog2_link"><span class="papertitle">A Journey Through Computational Lithography</span></a><br>
-                        Insights and learnings from my research internship at the Nano Devices and Circuits Lab, IIT Gandhinagar.
-                      </p>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>-->
+            <!--<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              <tbody>
+                <tr>
+                  <td style="padding:20px;width:100%;vertical-align:middle">
+                    <h2>Blogs / Miscellaneous</h2>
+                    <p>
+                      <a href="blog1_link"><span class="papertitle">The Future of AI in Autonomous Systems</span></a><br>
+                      A comprehensive blog post exploring the advancements and challenges in integrating AI with autonomous systems.
+                    </p>
+                    <p>
+                      <a href="blog2_link"><span class="papertitle">A Journey Through Computational Lithography</span></a><br>
+                      Insights and learnings from my research internship at the Nano Devices and Circuits Lab, IIT Gandhinagar.
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>-->
 
-              <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                <tbody>
-                  <tr>
-                    <td style="padding:20px;width:100%;vertical-align:middle">
-                      <p style="text-align: center; font-size: small;">
-                        Website template credit to <a href="https://jonbarron.info">Jon Barron</a>.
-                      </p>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              <tbody>
+                <tr>
+                  <td style="padding:20px;width:100%;vertical-align:middle">
+                    <p style="text-align: center; font-size: small;">
+                      Website template credit to <a href="https://jonbarron.info">Jon Barron</a>.
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </body>
 </html>
